@@ -3,6 +3,8 @@ Functional Testing
 Non Functional Testing
 & Maintainence
 ============================
+1.1
+
 Functional Testing:
 Unit Testing - A single subroutine or module test is called as Unit Testing. For Example A single piece of isolated module when puts under test 
 can be done through Unit Testing. This testing is done when developers develop the individual module and provide the module to tester to test.
@@ -26,4 +28,145 @@ Globalization: Globalization Testing refers to testing made to ensure that the s
 Interoperability : Interoperability tetsing refers to the testing communication or data interchange between two different machines or Operating systems for example if the same api renders same corredct data  to both a smart phone or a computer or a tablet. 
 =====================================================================
 Non FUnctional Testing:
+
+Performance Testing : This testing is used to check performance in respect to api response time, generally usd ofr pi as wella s  for web modules.
+
+Endurance Testing : Also called as load testing generally carried out through jmeter here threads are increased with respect to a give specific interval of time.
+This is also carried out in web module to check the response time generated. Endurance Testing is generally measured through API Index or also called as
+Application Performance Index
+
+Load Testing : This is similar to Endurance testing except that it is tested to check how much stress it can undertake.
+It is also load testing by negative scenario.
+
+VOlume Testing : Testing to check if a service is running for contnuous day
+
+==================================================================
+1.2 
+
+Create at least 3 test scenarios per category from your five testing types 
+
+here are test scenarios for each of the five testing types we mentioned:
+
+Unit Testing:
+Test the functionality of a single module of code, such as a class or function, to ensure that it behaves as expected.
+Test a specific edge case, such as inputting a negative number or a null value, to make sure the code handles it correctly.
+Test the performance of a single module of code to make sure that it runs efficiently and within acceptable time limits.
+
+Integration Testing:
+Test the integration of two or more modules of code to make sure that they work together correctly.
+Test a scenario in which multiple users are accessing the same functionality at the same time, to make sure the system can handle the load.
+Test an integration with an external system or API to verify that data is being exchanged correctly.
+
+Functional Testing:
+Test a specific feature or functionality of the system, such as a login system or a search feature, to make sure it works correctly.
+Test the entire user flow, from start to finish, to make sure that all the features work together correctly and that the user can complete their tasks.
+Test accessibility of the feature for different user, like visually impaired and elderly.
+
+Performance Testing:
+Test the system under heavy load, such as a high number of concurrent users or large amounts of data, to make sure it can handle the stress.
+Test the system's response time under normal and peak loads to ensure that it meets the performance requirements.
+Test the system's scalability by increasing the load gradually to see at what point it starts to degrade in performance.
+
+Security Testing:
+Test the system's authentication and authorization mechanisms to make sure they are properly implemented and secure.
+Test the system's input validation and output escaping to make sure that it is protected against common injection attacks.
+Test for any vulnerabilities which is commonly known like OWASP top 10 and check if it is mitigated.
+
+=====================================================
+
+1.3
+1.3. Dependencies 
+
+There are a few pieces of information that I would need before I can begin testing:
+
+The specifications of the system or product being tested: This includes information about the software, hardware, and any other components that make up the system or product. Knowing the specifications will help me understand what the system or product is supposed to do and how it is supposed to work.
+
+The test plan: A test plan outlines the overall strategy for testing the system or product. It includes details such as the types of tests that will be performed, the test environment, and the test schedule.
+
+Test cases and test data: Test cases are a set of instructions that specify the steps to follow to test the system or product. Test data is the input that will be used during testing. Having test cases and test data will allow me to perform the tests and validate the system or product's functionality.
+
+An understanding of the system requirements: I need to know what are the main requirements of the system or product, how it supposed to work and what it should do. This will help me understand how the system or product is supposed to behave and what to expect when I perform the tests.
+
+The expected results: Knowing the expected results of the tests will help me determine if the system or product is working as intended.
+
+Any additional requirement: Depending on the scenario, it may also be necessary to know things like the target users, the expected usage scenarios, and any relevant regulations or standards that apply to the system or product.
+
+
+=================================================================
+
+1.4 Defect reporting and management
+
+Reporting a defect back to the engineering team typically involves creating a defect report that includes details about the problem, steps to reproduce the issue, and any relevant information that will help the team understand and fix the problem.
+
+Here is an example of a defect report:
+
+Title: Unable to login to the application
+
+Description:
+When attempting to login to the application, the login page displays an error message indicating that the username or password is invalid, even when entering correct credentials.
+
+Steps to Reproduce:
+1. Open the application in a web browser
+2. Enter a valid username and password
+3. Click the "Login" button
+
+Expected Result:
+The user should be logged in to the application.
+
+Actual Result:
+An error message is displayed indicating that the username or password is invalid.
+
+Notes:
+- This issue occurs on both Chrome and Firefox browsers
+- This issue does not occur when logging in to the application from another network.
+- This issue is reproducible on both Windows and Mac operating systems
+- Error message: "Invalid Login Credentials"
+- Error code: E02
+- Screenshots of Error message attached
+
+===========================================
+
+1.5. Tooling 
+Tooling we would use for testing; 
+ 
+
+ There are many different tools that can be used for testing, depending on the specific needs of a project and the programming language being used. Some popular tools for testing include:
+
+Unit testing frameworks: These are frameworks that are specifically designed for writing and running unit tests, which test individual units of code (usually functions or methods) in isolation. Some popular unit testing frameworks include JUnit for Java, unittest for Python, and RSpec for Ruby.
+
+Test runners: Test runners are tools that are used to execute tests and provide results. Some popular test runners include JUnit for Java, nose or pytest for Python, and RSpec for Ruby.
+
+Assertion libraries: These libraries provide a set of functions that can be used to make assertions about the behavior of your code. These are often included as part of a unit testing framework or a test runner.
+
+Mocking frameworks: These frameworks allow we to create mock objects that mimic the behavior of real objects in your code. This can be useful for testing code that depends on external resources, such as a database or a web service. Some popular mocking frameworks include Mockito for Java, unittest.mock for Python, and Mocha.js for JavaScript.
+
+Code coverage tools: These tools are used to measure how much of your code is being executed by your tests. This can be a useful metric to determine how thorough your tests are. Some popular code coverage tools include Cobertura for Java, Istanbul for JavaScript, and Coverage.py for Python
+
+Continuous Integration (CI) Tools: These tools are used to automatically build and test your code every time there is a change, usually in your code repository. This helps developers to catch problems early on and continuously deliver quality code. Examples include Travis,
+
+
+=================================================================
+
+1.6. Test management 
+Your approach to managing tests in the long term
+
+Test management is an important aspect of software development, as it helps ensure that a software application is functioning as expected and meets the needs of its users. Here's a general approach to managing tests in the long term:
+
+Identify the types of tests that should be performed: There are many different types of tests that can be performed, such as unit tests, integration tests, and acceptance tests. Identifying the appropriate types of tests for your application will help ensure that all the necessary functionality is being tested.
+
+Create a test plan: A test plan is a document that outlines the goals, scope, resources, and schedule of the testing process. It should also include details on how the tests will be executed and what criteria will be used to determine if a test has passed or failed.
+
+Implement tests: Once the test plan is in place, we can begin implementing the tests. This might involve writing code for unit tests, creating test cases for integration tests, or developing test scripts for acceptance tests.
+
+Execute tests: After the tests have been implemented, they can be executed. This might involve running the tests manually, or using a test automation framework to run the tests automatically.
+
+Analyze results: After the tests have been executed, the results should be analyzed. This might involve identifying any failing tests and determining the cause of the failure, or looking for patterns in the test results that might indicate a problem with the application.
+
+Maintain tests: Testing is an ongoing process and it's important to maintain the tests. When new features are added or changes are made to the application, the tests should be updated to ensure they are still valid and continue to exercise the relevant functionality
+
+Use a Test Management Tool: Utilizing a Test Management Tool such as JIRA, TestRail, or Zephyr can help we to plan, execute and track the tests in an efficient way and also increase the collaboration with team members, stakeholders and customers.
+
+By following these steps, we can create a robust test management process that will help ensure that  software application is functioning as expected and meets the needs of its users.
+
+
 
