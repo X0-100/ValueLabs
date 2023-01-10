@@ -1,0 +1,29 @@
+Different Types Of Testing can be categorised to 
+Functional Testing
+Non Functional Testing
+& Maintainence
+============================
+Functional Testing:
+Unit Testing - A single subroutine or module test is called as Unit Testing. For Example A single piece of isolated module when puts under test 
+can be done through Unit Testing. This testing is done when developers develop the individual module and provide the module to tester to test.
+
+
+Integration Testing - Broader Testing where each modules units or componenets when combined together to be tested as a complete entity
+is integration tetsing. This is done when unit testig as well as system testing gets over.
+
+
+Smoke / Sanity Testing - Smoke Testing is performed when a software build is provided to tester to test, this build may contain various new features on top of the old features released, for example there are new code changes on top of already tested code or module. Smoke testing ensures that due to incorporation of new features the old features are stable and does not break
+
+
+Sanity Testing : SAnity Testing is done on the particular module releasedto be tested in such a way as not to capture every fialed case but to test the behaviour of the application is behaving rationally overall. Sanity Testing can be done for those modules where bug fixes has been done and we need to do a quick testing on the model to assess if the behaviour of the module is working as expected.
+
+User Acceptance Testing : It is done keeping customer s perspective in mind generally done by project managers or directly by the client. before executing UAT it is assumed that the SOfware has gone through all levles of functional testing for example unit, Integration, SYstem, Smoke Sanity and so on. It is executed to get conclusion about what was expected vs what is delivered.
+
+Localization : Localization testing is referred to the broader testing where the SOftware Product is assesed to be working for specific locals and regions, the metrices involved during this testing is behviour accuracy and suitability for a particular local or region.
+
+Globalization: Globalization Testing refers to testing made to ensure that the software product is suitable for any locals regional or any culture hence the name Globalization.
+
+Interoperability : Interoperability tetsing refers to the testing communication or data interchange between two different machines or Operating systems for example if the same api renders same corredct data  to both a smart phone or a computer or a tablet. 
+=====================================================================
+Non FUnctional Testing:
+
